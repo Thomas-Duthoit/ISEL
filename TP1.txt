@@ -1,0 +1,133 @@
+whatis: affiche une kugne de descrition dont le nom correspond à l'argument
+man -k = apropos
+
+apropos dir
++loin: apropos dir | less
++loin: apropos dir | grep "filtre"
+
+whereis passwd
+
+savoir qui on est: whoami
+
+information sur /etc/passwd  ?:
+man /etc/passwd 5 
+
+whereis cherche dans $PATH et $MANPATH (variables d'environnement)
+
+Sur linux: tout sur la même racine
+
+Windows: origine du C:
+avant sur MSDOS:
+A: première disquette
+B: deuxième disquette
+C: Disque dur n°1
+
+cd ~user
+=> cd vers le répértoire perso de user
+
+.     -> répértoire courant
+..    -> répértoire parent
+~     -> répértoire perso
+~user -> répértoire perso de user
+
+caractères Joker:
+* 	-> 0 ou plusieurs caractères quelconques
+? 	-> un caractère quelconque
+[xyzt]  -> un caractère parmis x y z et t
+[^xyzt] -> ou [!xyzt] tout sauf x y z et t
+
+Listage Long (ll)
+ls -al   ou   ls-la
+=> Affiche tout les fichiers avec toutes les infos (couleur=info aussi (ex: fichier ou répértoire)) sur ces fichiers
+<type>
+- régulier
+d répértoire
+... (voir le pdf support de cours pour le reste)
+<permission> (= 9 caractères)
+3 premiers:  owner
+3 du milieu: groupe
+3 derniers:  reste du monde
+<nombre de liens>
+<propriétaire> <groupe> cf. fichiers /etc/passwd et /etc/group
+<taille>
+<horodatage <nom>
+
+
+échange entre deux applications:
+=tube/boite au lettres/fifo
+
+terminal passif:
+
+			CONSOLE
+		       /   |   \
+		      /	   |	\		Communication entre les postes et la console mais pas d'intelligence 
+		     /	   |	 \		au niveau du poste de travail en temps que tel
+		    /	   |	  \
+		   /	   |	   \
+	Clavier souris     |      Clavier souris
+			   |
+		    Clavier souris
+	
+	
+/dev/  ==> Devices (=pérphériques)
+On ne peux pas exécuter un périphérique, permission "x" symbolique
+/dev/null = le trou noir
+
+
+etc:
+/etc/passwd
+cat /etc/passwd
+../../etc/passwd
+cat ../../etc/passwd
+/etc/passwd
+cat /etc/passwd
+passwd
+cat passwd
+
+cd
+ls -a ./.*
+ls -al
+
+
+ls /etc/p*
+
+ls -d => évite d'avoir l'afichage du contenu des dossiers pdt un ls (voir commande ci dessus)
+option --color (modifie la couleur lors de l'affichage, utiliser man pour voir les param de cette option)
+
+se termine par p:
+ls /etc/*p
+noms contenants 5 lettres:
+ls /etc/?????
+noms de 5 lettres qui se termine par p:
+ls /etc/????p
+
+ps: affiche les processus en cours dans ce shell
+
+echo $SHELL => affiche la variable d'environnement correspondant au shell
+/bin/bash  <---- Chemin absolu du shell
+
+type de la commande cd: commande interne, pas un éxécutable
+cd - retour vers le dir de travail précédent
+
+commandes sur répértoire:
+cd
+pwd
+ls
+mkdir
+rm
+rmdir
+mv
+cp
+
+touch fichier => créé un fichier fichier et setup l'hortodatage + fichier a une taille de 0
+
+mkdir -p s1/s2/s3
+cp -r "linux embarqué" lemb/
+
+
+supprimer un dossier non vide:
+rm -r dossier
+
+exemple:
+rm -r "linux embarqué"/s1
+
