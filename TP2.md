@@ -13,6 +13,10 @@
 
 [> *Processus et Ordonnancement*](#processus)
 
+[> *E/S d'un processus*](#es)
+
+[> *Redirection de données*](#redir)
+
 ***
 
 <div id="iduser">
@@ -239,3 +243,62 @@ Envoie un signal à un ou des processus:
 - **<span style='color: #0f0;'>kill -\<n> -1</span>**: envoie le signal **\<n>** à tous les processus dont l'UID réel est **identique** à **l'UID effectif du propriétaire** du shell émetteur
     - **autrement dit le signal est envoyé à tous les processus de l'utilisateur**
 - **<span style='color: #0f0;'>kill -\<n> -\<PID></span>**: envoie le signal **\<n>** à tous les processus du **groupe PID**
+
+****
+
+#### **nice et renice:**
+
+Change la priorité des processus
+
+***
+
+<div id="es">
+
+### **E/S d'un processus**
+
+**0** -> entrée stantard: **stdin**
+<br>
+**1** -> sortie standard: **stdout**
+<br>
+**2** -> la sortie d'erreur: **stderr**
+
+<ins>Par défaut:</ins>
+- stdin = clavier
+- stdout et stderr = écran
+
+***
+
+<div id="redir">
+
+### **Redirection de données**
+
+> **la commande est suivie du symbole < et du nom de fichier**
+<br>
+*exemple:*
+<br> 
+wx < fichier
+
+***
+
+**Redirection des résultats**
+
+La commande est suivie du symbole **>** et du nom de fichier
+- **commande > result** => Création/Ecrasement
+- **commande >> result** => Ajout (Concaténation)
+
+Redirection d'erreur: **2> fichier**
+- Exemple: commande 2> error
+
+***
+
+**Combinaisons:**
+- Exemple: commande > result < data 2> error
+- **1>&2** redirige la sortie standard vers la sortie d'erreur
+- **2>&1** inversement
+- A placer la la fin des commandes
+
+***
+
+**echo -n** : pas de retour à la ligne après le echo
+
+***
