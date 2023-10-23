@@ -1,8 +1,19 @@
 # <span style='color: #0f2;'>**ig2i@isel**</span>:<span style='color: #4DA6FF; font-family: Monospace'>~ $ ISEL/TP2</span>
 
-<img src="src/github.svg" alt="github" width="30"/> 
-
 [> **Accès au Repository d'ISEL** <](https://github.com/Thomas-Duthoit/ISEL)
+
+***
+
+## `Sommaire:`
+[> *Indentification de l'utilisateur*](#iduser)
+
+[> *Permissions sur les fichiers*](#perms)
+
+[> *Gestion des Utilisateurs/Groupes*](#gestugrp)
+***
+
+<div id="iduser">
+
 ### **Identification utilisateur:**
 ```
 id
@@ -33,6 +44,8 @@ Un nom d'utilisateur peut apparaitre dans plusieurs groupes
 On peut changer de groupe avec la commande <span style='color: #0f0;'>newgrp</span>
 
 ***
+
+<div id="perms">
 
 ### **3 permissions * 3 classes**
 
@@ -98,6 +111,11 @@ La valeur de umask est exprimée en base octale:
 > "umask 066: sécurité et souplesse"
 
 ***
+<div id="gestugrp">
+
+### **Gestion des Utilisateurs/Groupes**
+
+***
 
 <span style='color: #0f0;'>newgrp</span>: permet à l'utilisateur de changer de groupe principal
 <br>
@@ -110,8 +128,7 @@ La valeur de umask est exprimée en base octale:
 > **Utilité du groupe principal par rapport aux groupes secondaires:** Quand on crée un fichier, il appartiendra par défaut à notre groupe principal
 
 ***
-
-><span style='color: #0f0;'>adduser user</span> : ajouter user
+<span style='color: #0f0;'>adduser user</span> : ajouter user
 <br>
 <span style='color: #0f0;'>addgroup group</span> : ajouter le groupe group
 <br>
@@ -123,3 +140,6 @@ La valeur de umask est exprimée en base octale:
 
 ***
 
+Un programme en cours d'éxécution est un processus
+plusieurs processus peuvent être exécutés en donnant l'imporession que chacun dispose du processeur pour lui tout seul
+mécanisme d'ordonnancement en temps partagé
