@@ -4,12 +4,15 @@
 
 ***
 
-## `Sommaire:`
+## `./Sommaire`
 [> *Indentification de l'utilisateur*](#iduser)
 
 [> *Permissions sur les fichiers*](#perms)
 
 [> *Gestion des Utilisateurs/Groupes*](#gestugrp)
+
+[> *Processus et Ordonnancement*](#processus)
+
 ***
 
 <div id="iduser">
@@ -140,6 +143,33 @@ La valeur de umask est exprimée en base octale:
 
 ***
 
+<div id="processus">
+
+### **Processus et Ordonnancement**
+
 Un programme en cours d'éxécution est un processus
-plusieurs processus peuvent être exécutés en donnant l'imporession que chacun dispose du processeur pour lui tout seul
-mécanisme d'ordonnancement en temps partagé
+<br>
+Plusieurs processus peuvent être exécutés en donnant l'impression que chacun dispose du processeur pour lui tout seul.
+<br>
+C'est grâce au mécanisme d'ordonnancement en **temps partagé**
+
+***
+
+gâteau d'anniversaire = recette + ingrédients + faire la cuisine
+<br>
+- recette = programme
+- ingrédients = paramètres
+- faire la cuisine = processus
+
+***
+
+- les processus sont organisés en **arborescence de processus**
+    - Un **processus père** crée un ou plusieurs **processus fils**
+    - Chaque processus est identifié par son **PID** (process id)
+- Les processus sont **ordonnancés** par le noyau:
+    - Chaque processus peut s'éxécuter pendant un **quantum temps**, puis doit laisser sa place sur le processeur
+    - Son contexte est sauvegardé en mémoire vive, un nouveau contexte est chargé sur le processeur
+- Les changements de contexte sappellent des **commutations**
+    - Si trop de contextes en mémoire vive: on **pagine** sur le disque dans une partition dédiée: **swap**
+
+***
