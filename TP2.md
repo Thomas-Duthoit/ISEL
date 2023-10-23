@@ -93,3 +93,11 @@ chaque permissions s'exprime par **[ugoa][+-=][rwxst]**
 La valeur de umask est exprimée en base octale:
 
 > "umask 066: sécurité et souplesse"
+
+***
+
+<span style='color: #0f0;'>newgrp</span>: permet à l'tilisateur de changer de groupe principal
+<br>
+<span style='color: #0f0;'>chown</span>: permet de changer le propriétaire du fichier
+<br>
+<span style='color: #0f0;'>chgrp</span>: permet de changer le groupe du fichier
