@@ -185,3 +185,34 @@ gâteau d'anniversaire = recette + ingrédients + faire la cuisine
 - <ins>**Zombi:**</ins>
     - Execution terminée, prêt à mourir
     - Le processus père n'a pas encore pris en compte sa mort
+
+***
+
+```
+================AFFICHER LES PROCESSUS================
+Différentes commandes possibles, par exemple:        
+        ps
+        pstree
+        top
+        htop
+        pidof w
+
+======================================================
+```
+
+***
+
+`PR`: Priorité d'un processus, elle dépend également de l'utilisateur qui le lance.
+
+***
+
+Un processus peut être:
+- Synchrone
+    - Au premier plan de l'interpréteur
+    - On ne peut pas lancer d'autre commande
+- Asynchrone
+    - En arrière-plan
+    - On peut continuer à se servir du shell
+
+***
+
