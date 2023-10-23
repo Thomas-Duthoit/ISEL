@@ -200,6 +200,10 @@ Différentes commandes possibles, par exemple:
 ======================================================
 ```
 
+<ins>Exemple:</ins> la commande **`htop`**
+
+![htop](src/htop.png)
+
 ***
 
 `PR`: Priorité d'un processus, elle dépend également de l'utilisateur qui le lance.
@@ -216,3 +220,22 @@ Un processus peut être:
 
 ***
 
+#### **ps: Affiche les processus en cours d'éxécution**
+
+- **<span style='color: #0f0;'>ps -a</span>**: tous les processus associés à un terminal
+- **<span style='color: #0f0;'>ps -ax</span>**: tous les processus
+- **<span style='color: #0f0;'>ps -l</span>**: long listing
+- **<span style='color: #0f0;'>ps -U \<username></span>**: afficher tout les processus d'un utilisateur (uid)
+- **<span style='color: #0f0;'>ps -o \<format></span>**: demander un format particulier
+
+**<span style='color: #0f0;'>tty</span>**: numéro du terminal actuel
+
+***
+
+### **Commande <span style='color: #0f0;'>kill</span>**
+
+Envoie un signal à un ou des processus:
+- **<span style='color: #0f0;'>kill -\<n> \<PID></span>**: envoie un signal **n** au processus **PID**
+- **<span style='color: #0f0;'>kill -\<n> -1</span>**: envoie le signal **\<n>** à tous les processus dont l'UID réel est **identique** à **l'UID effectif du propriétaire** du shell émetteur
+    - **autrement dit le signal est envoyé à tous les processus de l'utilisateur**
+- **<span style='color: #0f0;'>kill -\<n> -\<PID></span>**: envoie le signal **\<n>** à tous les processus du **groupe PID**
