@@ -173,3 +173,15 @@ gâteau d'anniversaire = recette + ingrédients + faire la cuisine
     - Si trop de contextes en mémoire vive: on **pagine** sur le disque dans une partition dédiée: **swap**
 
 ***
+
+#### **Différents états d'un processus:**
+
+- <ins>**Elu/Actif:**</ins>
+    - Le processus a le contrôle du processeur
+- <ins>**Pret/Endormi:**</ins>
+    - Toutes les ressources sont dispo sauf le CPU (en file d'attente)
+- <ins>**Bloqué/Stoppé:**</ins>
+    - En attente d'une ressource autre que CPU ou d'un événement
+- <ins>**Zombi:**</ins>
+    - Execution terminée, prêt à mourir
+    - Le processus père n'a pas encore pris en compte sa mort
