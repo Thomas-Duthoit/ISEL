@@ -47,7 +47,7 @@ On peut changer de groupe avec la commande <span style='color: #0f0;'>newgrp</sp
 
 <div id="perms">
 
-### **3 permissions * 3 classes**
+### **Permissions sur les fichiers: 3 permissions * 3 classes**
 
 **Fichiers:**
 <br>
