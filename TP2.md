@@ -1,5 +1,5 @@
-# **<span style='color: #4DA6FF;'><ins>ISEL: TP2</ins></span>**
-
+# <span style='color: #0f2;'>**ig2i@isel**</span>:<span style='color: #4DA6FF; font-family: Monospace'>- $ ISEL/TP2</span>
+[**Accès au Repository d'ISEL**](https://github.com/Thomas-Duthoit/ISEL)
 ### **Identification utilisateur:**
 ```
 id
@@ -96,8 +96,27 @@ La valeur de umask est exprimée en base octale:
 
 ***
 
-<span style='color: #0f0;'>newgrp</span>: permet à l'tilisateur de changer de groupe principal
+<span style='color: #0f0;'>newgrp</span>: permet à l'utilisateur de changer de groupe principal
 <br>
 <span style='color: #0f0;'>chown</span>: permet de changer le propriétaire du fichier
 <br>
 <span style='color: #0f0;'>chgrp</span>: permet de changer le groupe du fichier
+
+***
+
+> **Utilité du groupe principal par rapport aux groupes secondaires:** Quand on crée un fichier, il appartiendra par défaut à notre groupe principal
+
+***
+
+><span style='color: #0f0;'>adduser user</span> : ajouter user
+<br>
+<span style='color: #0f0;'>addgroup group</span> : ajouter le groupe group
+<br>
+<span style='color: #0f0;'>passwd user</span> : change le mdp de user 
+<br>
+<span style='color: #0f0;'>deluser user</span> : supprime l'utilisateur user
+<br>
+<span style='color: #0f0;'>delgroup group</span> : supprime le groupe groupe
+
+***
+
